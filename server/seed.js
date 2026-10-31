@@ -1,0 +1,28 @@
+// Sample catalogue, inserted only when the products table is empty.
+// Prices are integer pence.
+export const products = [
+  { id: 'bananas', name: 'Bananas', unit: '5 pack', category: 'Fruit & Veg', pricePence: 85, stock: 120, emoji: '🍌', color: '#fef9c3', description: 'Ripe, sweet and ready to eat.' },
+  { id: 'apples', name: 'Gala Apples', unit: '6 pack', category: 'Fruit & Veg', pricePence: 199, stock: 90, emoji: '🍎', color: '#fee2e2', description: 'Crisp British-grown eating apples.' },
+  { id: 'strawberries', name: 'Strawberries', unit: '400g', category: 'Fruit & Veg', pricePence: 279, stock: 60, emoji: '🍓', color: '#ffe4e6', description: 'Juicy summer berries.' },
+  { id: 'broccoli', name: 'Broccoli', unit: '350g', category: 'Fruit & Veg', pricePence: 99, stock: 70, emoji: '🥦', color: '#dcfce7', description: 'Fresh florets, great steamed or roasted.' },
+  { id: 'carrots', name: 'Carrots', unit: '1kg', category: 'Fruit & Veg', pricePence: 69, stock: 150, emoji: '🥕', color: '#ffedd5', description: 'Sweet, crunchy and British.' },
+  { id: 'avocados', name: 'Ripe Avocados', unit: '2 pack', category: 'Fruit & Veg', pricePence: 220, stock: 80, emoji: '🥑', color: '#ecfccb', description: 'Ready to eat today.' },
+  { id: 'milk', name: 'Whole Milk', unit: '2 pints', category: 'Dairy & Eggs', pricePence: 145, stock: 200, emoji: '🥛', color: '#e0f2fe', description: 'Fresh British whole milk.' },
+  { id: 'eggs', name: 'Free Range Eggs', unit: '12 pack', category: 'Dairy & Eggs', pricePence: 310, stock: 100, emoji: '🥚', color: '#fef3c7', description: 'Medium free range eggs.' },
+  { id: 'cheddar', name: 'Mature Cheddar', unit: '350g', category: 'Dairy & Eggs', pricePence: 289, stock: 75, emoji: '🧀', color: '#fef08a', description: 'Rich, tangy and slow matured.' },
+  { id: 'butter', name: 'Salted Butter', unit: '250g', category: 'Dairy & Eggs', pricePence: 199, stock: 110, emoji: '🧈', color: '#fef9c3', description: 'Creamy block butter.' },
+  { id: 'sourdough', name: 'Sourdough Loaf', unit: '400g', category: 'Bakery', pricePence: 235, stock: 40, emoji: '🍞', color: '#ffedd5', description: 'Baked fresh, crisp crust.' },
+  { id: 'croissants', name: 'All Butter Croissants', unit: '4 pack', category: 'Bakery', pricePence: 190, stock: 45, emoji: '🥐', color: '#fde68a', description: 'Flaky and golden.' },
+  { id: 'bagels', name: 'Plain Bagels', unit: '5 pack', category: 'Bakery', pricePence: 130, stock: 60, emoji: '🥯', color: '#fef3c7', description: 'Chewy and toast-ready.' },
+  { id: 'chicken', name: 'Chicken Breast Fillets', unit: '650g', category: 'Meat & Fish', pricePence: 495, stock: 55, emoji: '🍗', color: '#fee2e2', description: 'British, skinless and boneless.' },
+  { id: 'salmon', name: 'Salmon Fillets', unit: '2 pack', category: 'Meat & Fish', pricePence: 449, stock: 35, emoji: '🐟', color: '#ffe4e6', description: 'Responsibly sourced Scottish salmon.' },
+  { id: 'sausages', name: 'Pork Sausages', unit: '8 pack', category: 'Meat & Fish', pricePence: 275, stock: 65, emoji: '🌭', color: '#fecaca', description: 'Traditional British recipe.' },
+  { id: 'pasta', name: 'Spaghetti', unit: '500g', category: 'Pantry', pricePence: 110, stock: 180, emoji: '🍝', color: '#fef3c7', description: 'Durum wheat pasta.' },
+  { id: 'rice', name: 'Basmati Rice', unit: '1kg', category: 'Pantry', pricePence: 250, stock: 140, emoji: '🍚', color: '#f1f5f9', description: 'Long grain, fluffy when cooked.' },
+  { id: 'beans', name: 'Baked Beans', unit: '4 x 400g', category: 'Pantry', pricePence: 240, stock: 130, emoji: '🥫', color: '#ffedd5', description: 'In rich tomato sauce.' },
+  { id: 'oliveoil', name: 'Extra Virgin Olive Oil', unit: '500ml', category: 'Pantry', pricePence: 599, stock: 50, emoji: '🫒', color: '#ecfccb', description: 'Cold pressed, for dressing and dipping.' },
+  { id: 'coffee', name: 'Ground Coffee', unit: '227g', category: 'Drinks', pricePence: 449, stock: 70, emoji: '☕', color: '#e7e5e4', description: 'Medium roast, smooth finish.' },
+  { id: 'tea', name: 'English Breakfast Tea', unit: '80 bags', category: 'Drinks', pricePence: 235, stock: 160, emoji: '🫖', color: '#fed7aa', description: 'A proper cuppa.' },
+  { id: 'oj', name: 'Orange Juice', unit: '1 litre', category: 'Drinks', pricePence: 189, stock: 95, emoji: '🍊', color: '#ffedd5', description: 'Freshly squeezed, not from concentrate.' },
+  { id: 'sparkling', name: 'Sparkling Water', unit: '6 x 1.5L', category: 'Drinks', pricePence: 360, stock: 85, emoji: '💧', color: '#e0f2fe', description: 'Light natural sparkle.' },
+];

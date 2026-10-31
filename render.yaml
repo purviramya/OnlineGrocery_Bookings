@@ -1,0 +1,34 @@
+# Render Blueprint: Render → New → Blueprint → pick this repo. One web service, no Docker needed.
+# The database is Neon (external), so no `databases:` block.
+services:
+  - type: web
+    name: freshbasket
+    runtime: node
+    plan: free              # free services sleep after ~15 min idle; use `starter` for always-on
+    region: oregon          # pick the region closest to your Neon project (e.g. `ohio` for us-east-2, `frankfurt` for eu-central-1)
+    # --include=dev: Vite is a devDependency and Render sets NODE_ENV=production.
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DATABASE_URL     # Neon POOLED url (host contains -pooler); Render asks for it on first deploy
+        sync: false
+      - key: BETTER_AUTH_SECRET
+        generateValue: true   # Render creates a random value once
+      # BETTER_AUTH_URL is optional here: server/auth.js falls back to Render's RENDER_EXTERNAL_URL.
+      # Set it only if you add a custom domain.
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: FACEBOOK_CLIENT_ID
+        sync: false
+      - key: FACEBOOK_CLIENT_SECRET
+        sync: false
+      - key: INSTAGRAM_CLIENT_ID
+        sync: false
+      - key: INSTAGRAM_CLIENT_SECRET
+        sync: false
